@@ -138,3 +138,16 @@ This will allow the Placement Portal to display real-time data from the Salesfor
 ## Project Outcome
 
 Successfully created and deployed a Lightning Web Component for a Placement Management System and learned the fundamentals of Salesforce front-end development.
+
+##Screenshots
+<img width="1436" height="908" alt="image" src="https://github.com/user-attachments/assets/8020d65e-4138-49d2-a4f4-d7ecbb73e17b" />
+---
+<img width="557" height="431" alt="image" src="https://github.com/user-attachments/assets/58c76c58-a829-4185-ba9b-9b0280d94668" />
+---
+<img width="476" height="340" alt="image" src="https://github.com/user-attachments/assets/942b5048-d086-4dea-b915-57338263f305" />
+---
+<img width="471" height="551" alt="image" src="https://github.com/user-attachments/assets/6fdeb87f-c1e7-4091-8284-89715e2542b9" />
+---
+<img width="392" height="438" alt="image" src="https://github.com/user-attachments/assets/d063663f-77f3-48fe-ab1f-ed7242ab717e" />
+---
+<img width="871" height="666" alt="image" src="https://github.com/user-attachments/assets/e9e9bb9e-ad5f-462e-9349-5701dc2b96bf" />
