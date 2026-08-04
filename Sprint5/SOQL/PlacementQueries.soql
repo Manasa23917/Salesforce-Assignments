@@ -1,0 +1,35 @@
+-- 1. Retrieve Student Information
+SELECT Id, Name, CGPA__c, Branch__c, Backlogs__c
+FROM Students__c
+WHERE Name = 'Manasa'
+LIMIT 1;
+
+
+-- 2. Retrieve Job Opening and Eligibility Criteria
+SELECT Id, Name, Minimum_CGPA__c,
+       Eligible_Branches__c,
+       Maximum_Backlogs__c
+FROM Job_Opening__c
+WHERE Name = 'Amazon Software Developer'
+LIMIT 1;
+
+
+-- 3. Check Duplicate Application
+SELECT Id, Name, Student__c,
+       Job_Opening__c, Status__c
+FROM Application__c
+WHERE Student__c = 'STUDENT_ID'
+AND Job_Opening__c = 'JOB_ID';
+
+
+-- 4. Retrieve Application
+SELECT Id, Name, Student__c,
+       Job_Opening__c, Status__c
+FROM Application__c;
+
+
+-- 5. Check Updated Application Status
+SELECT Id, Name, Status__c
+FROM Application__c
+WHERE Student__c = 'STUDENT_ID'
+AND Job_Opening__c = 'JOB_ID';
