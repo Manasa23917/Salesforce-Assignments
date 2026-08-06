@@ -1,0 +1,11 @@
+public class ApplicationService {
+
+    public static void processApplication(Id applicationId){
+
+        System.enqueueJob(
+            new ApplicationPostProcessingJob(applicationId)
+        );
+
+    }
+
+}
