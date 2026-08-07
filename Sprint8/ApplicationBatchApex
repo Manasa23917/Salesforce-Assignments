@@ -1,0 +1,31 @@
+public class ApplicationBatch implements Database.Batchable<SObject> {
+
+    public Database.QueryLocator start(Database.BatchableContext context) {
+
+        return Database.getQueryLocator(
+            'SELECT Id, Name, Status__c FROM Application__c'
+        );
+    }
+
+    public void execute(
+        Database.BatchableContext context,
+        List<Application__c> scope
+    ) {
+
+        for (Application__c app : scope) {
+
+            System.debug(
+                'Processing Application: ' + app.Name
+            );
+
+            System.debug(
+                'Status: ' + app.Status__c
+            );
+        }
+    }
+
+    public void finish(Database.BatchableContext context) {
+
+        System.debug('Application Batch Processing Completed');
+    }
+}
